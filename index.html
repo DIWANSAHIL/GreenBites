@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green Bites - Vegetarian Restaurant</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">Green<span>Bites</span></a>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-list">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#menu" class="nav-link">Menu</a></li>
+                <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Fresh, Healthy, Delicious</h1>
+                <p>Experience the best plant-based cuisine in town</p>
+                <div class="hero-btns">
+                    <a href="#menu" class="btn-primary">View Menu</a>
+                    <a href="#contact" class="btn-secondary">Reserve a Table</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Story</h2>
+                <p>Discover the passion behind our vegetarian cuisine</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Welcome to Green Bites</h3>
+                    <p>Founded in 2010, Green Bites began as a small café with a big dream: to make vegetarian food exciting, flavorful, and accessible to everyone. Our chefs combine fresh, locally-sourced ingredients with innovative techniques to create dishes that satisfy both vegetarians and meat-eaters alike.</p>
+                    <p>We believe that eating plant-based shouldn't mean sacrificing taste or satisfaction. Every dish on our menu is crafted with care, balancing nutrition with incredible flavors that will make you forget it's all vegetables!</p>
+                    <div class="about-features">
+                        <div class="feature">
+                            <i class="fas fa-leaf"></i>
+                            <h4>100% Vegetarian</h4>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-seedling"></i>
+                            <h4>Organic Ingredients</h4>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-heart"></i>
+                            <h4>Healthy Choices</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Vegetarian dishes">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="menu" id="menu">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Menu</h2>
+                <p>Seasonal selections crafted with care</p>
+            </div>
+            <div class="menu-tabs">
+                <button class="tab-btn active" data-category="starters">Starters</button>
+                <button class="tab-btn" data-category="mains">Main Courses</button>
+                <button class="tab-btn" data-category="desserts">Desserts</button>
+                <button class="tab-btn" data-category="drinks">Drinks</button>
+            </div>
+            <div class="menu-items">
+                <!-- Starters -->
+                <div class="menu-category active" id="starters">
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Avocado Bruschetta</h3>
+                            <p>Crispy bread topped with smashed avocado, cherry tomatoes, and basil</p>
+                        </div>
+                        <div class="item-price">$8.50</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Mushroom Arancini</h3>
+                            <p>Crispy risotto balls with wild mushrooms and truffle oil</p>
+                        </div>
+                        <div class="item-price">$9.00</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Spinach Pakoras</h3>
+                            <p>Spiced spinach fritters with mint yogurt dip</p>
+                        </div>
+                        <div class="item-price">$7.50</div>
+                    </div>
+                </div>
+                
+                <!-- Mains -->
+                <div class="menu-category" id="mains">
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Eggplant Parmigiana</h3>
+                            <p>Layered eggplant with tomato sauce, mozzarella, and parmesan</p>
+                        </div>
+                        <div class="item-price">$15.00</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Mushroom Wellington</h3>
+                            <p>Puff pastry filled with wild mushrooms, spinach, and herbs</p>
+                        </div>
+                        <div class="item-price">$16.50</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Chickpea Curry</h3>
+                            <p>Spiced chickpeas in coconut milk with basmati rice</p>
+                        </div>
+                        <div class="item-price">$14.00</div>
+                    </div>
+                </div>
+                
+                <!-- Desserts -->
+                <div class="menu-category" id="desserts">
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Chocolate Avocado Mousse</h3>
+                            <p>Rich chocolate mousse made with ripe avocados</p>
+                        </div>
+                        <div class="item-price">$7.00</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Vegan Cheesecake</h3>
+                            <p>Creamy cashew-based cheesecake with berry compote</p>
+                        </div>
+                        <div class="item-price">$8.00</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Coconut Rice Pudding</h3>
+                            <p>Traditional rice pudding made with coconut milk</p>
+                        </div>
+                        <div class="item-price">$6.50</div>
+                    </div>
+                </div>
+                
+                <!-- Drinks -->
+                <div class="menu-category" id="drinks">
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Green Detox Smoothie</h3>
+                            <p>Kale, spinach, apple, lemon, and ginger</p>
+                        </div>
+                        <div class="item-price">$6.00</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Turmeric Latte</h3>
+                            <p>Golden milk with turmeric, cinnamon, and black pepper</p>
+                        </div>
+                        <div class="item-price">$5.50</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Berry Blast</h3>
+                            <p>Mixed berries, banana, and almond milk</p>
+                        </div>
+                        <div class="item-price">$6.50</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery" id="gallery">
+        <div class="container">
+            <div class="section-header">
+                <h2>Food Gallery</h2>
+                <p>A visual feast of our delicious creations</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Vegetarian dish">
+                    <div class="gallery-overlay">
+                        <h3>Avocado Toast</h3>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Salad">
+                    <div class="gallery-overlay">
+                        <h3>Seasonal Salad</h3>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Pasta">
+                    <div class="gallery-overlay">
+                        <h3>Truffle Pasta</h3>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1505576399279-565b52d4ac71?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Smoothie">
+                    <div class="gallery-overlay">
+                        <h3>Berry Smoothie</h3>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1484723091739-30a097e8f929?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Brunch">
+                    <div class="gallery-overlay">
+                        <h3>Vegan Brunch</h3>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Dessert">
+                    <div class="gallery-overlay">
+                        <h3>Chocolate Cake</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2>What Our Customers Say</h2>
+                <p>Hear from our happy diners</p>
+            </div>
+            <div class="testimonial-slider">
+                <div class="testimonial active">
+                    <div class="testimonial-content">
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"The mushroom wellington was absolutely incredible! I'm not even vegetarian but this is now my favorite restaurant in town."</p>
+                        <div class="customer">
+                            <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Sarah J.">
+                            <h4>Sarah J.</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"As a long-time vegan, I'm always skeptical of restaurants claiming to do plant-based well. Green Bites exceeded all my expectations!"</p>
+                        <div class="customer">
+                            <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Michael T.">
+                            <h4>Michael T.</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <p>"The atmosphere is lovely, the service impeccable, and the food... oh the food! The avocado bruschetta is to die for."</p>
+                        <div class="customer">
+                            <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Emma R.">
+                            <h4>Emma R.</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-controls">
+                    <button class="slider-btn prev"><i class="fas fa-chevron-left"></i></button>
+                    <button class="slider-btn next"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Contact Us</h2>
+                <p>We'd love to hear from you</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Address</h3>
+                            <p>123 Green Street, Foodville, CA 90210</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <div>
+                            <h3>Phone</h3>
+                            <p>(555) 123-4567</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <p>hello@greenbites.com</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h3>Opening Hours</h3>
+                            <p>Monday - Friday: 11am - 10pm</p>
+                            <p>Saturday - Sunday: 10am - 11pm</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-yelp"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="reservationForm">
+                        <div class="form-group">
+                            <input type="text" id="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" placeholder="Phone Number" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="date" id="date" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="time" id="time" required>
+                        </div>
+                        <div class="form-group">
+                            <select id="guests" required>
+                                <option value="" disabled selected>Number of Guests</option>
+                                <option value="1">1 Person</option>
+                                <option value="2">2 People</option>
+                                <option value="3">3 People</option>
+                                <option value="4">4 People</option>
+                                <option value="5+">5+ People</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" rows="4" placeholder="Special Requests"></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary">Make Reservation</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h3>Green Bites</h3>
+                    <p>Fresh, healthy, and delicious vegetarian cuisine made with love and locally-sourced ingredients.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to get updates on special offers and events.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your Email">
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Green Bites. All Rights Reserved by SAHIL DIWAN.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
